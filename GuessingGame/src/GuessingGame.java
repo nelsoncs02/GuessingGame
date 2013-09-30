@@ -14,7 +14,7 @@ public class GuessingGame {
 			int a = reader.nextInt();
 			if(a==b){
 				done=true;
-				System.out.println("Correct!");
+				System.out.println("Correct, but different!!");
 			}
 			else if(a<b){
 				System.out.println("Too Low!");
