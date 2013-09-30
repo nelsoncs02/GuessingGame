@@ -8,16 +8,20 @@ public class GuessingGame {
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Guess a number 0-25");
 		//get user input for a
-		int a= reader.nextInt();
 		int b= ran.nextInt(25);
-		if(a==b){
-			System.out.println("Correct!");
-		}
-		else if(a<b){
-			System.out.println("Too Low!");
-		}
-		else if(a>b){
-			System.out.println("Too High!");
+		boolean done = false;
+		while(!done){
+			int a = reader.nextInt();
+			if(a==b){
+				done=true;
+				System.out.println("Correct!");
+			}
+			else if(a<b){
+				System.out.println("Too Low!");
+			}
+			else if(a>b){
+				System.out.println("Too High!");
+			}
 		}
 	}
 }
